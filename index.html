@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة صراحة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="start-screen">
+        <h1>لعبة صراحة</h1>
+        <button class="btn" onclick="startGame()">ابدأ اللعبة</button>
+    </div>
+
+    <div class="container" id="game-screen" style="display: none;">
+        <h1>لعبة صراحة</h1>
+        <div id="question-box">
+            <p id="question">اضغط على الزر لبدء اللعبة!</p>
+        </div>
+        <div id="options"></div>
+        <div class="result" id="result"></div>
+        <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>السؤال التالي</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
